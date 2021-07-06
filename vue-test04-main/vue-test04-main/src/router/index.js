@@ -20,6 +20,7 @@ import RenderingIf from "../views/RenderingIf.vue";
 import EventBinding from "../views/EventBinding.vue";
 import Vending from "../views/Vending.vue";
 import UserList from "../views/UserList.vue";
+import Restaraunt_My from "../views/Restaraunt_My.vue";
 
 
 const routes = [{

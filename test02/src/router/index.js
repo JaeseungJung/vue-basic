@@ -1,7 +1,4 @@
-import {
-  createRouter,
-  createWebHistory
-} from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 
 import Home from "../views/Home.vue";
 import About from "../views/About.vue";
@@ -16,17 +13,29 @@ import dataBindingAttribute from "../views/dataBindingAttribute.vue";
 import DataBindingHTML from "../views/DataBindingHTML.vue";
 import dataBindingButton from "../views/dataBindingButton.vue";
 import dataBindingClass from "../views/dataBindingClass.vue";
-import dataBindingClass2 from "../views/dataBindingClass2.vue";
+// import dataBindingClass2 from "../views/dataBindingClass2.vue";
 import dataBindingStyle from "../views/dataBindingStyle.vue";
 import dataBindingList from "../views/dataBindingList.vue";
 import dataBindingList2 from "../views/dataBindingList2.vue";
 import renderingIf from "../views/renderingIf.vue";
 import eventBinding from "../views/eventBinding.vue";
 import vending from "../views/vending.vue";
+import Restaurant_My from "../views/Restaurant_My.vue";
+import Restaurant_T from "../views/Restaurant_T.vue";
+import nestedComponent from "../views/nestedComponent.vue";
+import nestedComponent2 from "../views/nestedComponent2.vue";
+import nestedComponent3 from "../views/nestedComponent3.vue";
+import nestedComponent4 from "../views/nestedComponent4.vue";
+import nestedComponent5 from "../views/nestedComponent5.vue";
+// import Parent from "../views/Parent.vue";
+// import Parent2 from "../views/Parent2.vue";
+// import SlotUserModalLayout from "../views/SlotUserModalLayout.vue";
+import ProviedInject from "../views/ProviedInject.vue";
+// import watch from "../views/watch.vue";
+// import computed from "../views/computed.vue";
 
-
-
-const routes = [{
+const routes = [
+  {
     path: "/",
     name: "Home",
     component: Home,
@@ -92,7 +101,6 @@ const routes = [{
     component: dataBindingButton,
   },
 
-
   {
     path: "/dataBindingClass",
     name: "dataBindingClass",
@@ -135,8 +143,71 @@ const routes = [{
     name: "vending",
     component: vending,
   },
-
-
+  {
+    path: "/Restaurant_My",
+    name: "Restaurant_My",
+    component: Restaurant_My,
+  },
+  {
+    path: "/Restaurant_T",
+    name: "Restaurant_T",
+    component: Restaurant_T,
+  },
+  // {
+  //   path: "/nestedComponent",
+  //   name: "nestedComponent",
+  //   component: nestedComponent,
+  // },
+  // {
+  //   path: "/nestedComponent2",
+  //   name: "nestedComponent2",
+  //   component: nestedComponent2,
+  // },
+  // {
+  //   path: "/nestedComponent3",
+  //   name: "nestedComponent3",
+  //   component: nestedComponent3,
+  // },
+  // {
+  //   path: "/nestedComponent4",
+  //   name: "nestedComponent4",
+  //   component: nestedComponent4,
+  // },
+  // {
+  //   path: "/nestedComponent5",
+  //   name: "nestedComponent5",
+  //   component: nestedComponent5,
+  // },
+  // {
+  //   path: "/Parent",
+  //   name: "Parent",
+  //   component: Parent,
+  // },
+  // {
+  //   path: "/Parent2",
+  //   name: "Parent2",
+  //   component: Parent2,
+  // },
+  // {
+  //   path: "/SlotUserModalLayout",
+  //   name: "SlotUserModalLayout",
+  //   component: SlotUserModalLayout,
+  // },
+  {
+    path: "/ProviedInject",
+    name: "ProviedInject",
+    component: ProviedInject,
+  },
+  // // {
+  //   path: "/computed",
+  //   name: "computed",
+  //   component: computed,
+  // },
+  // {
+  //   path: "/watch",
+  //   name: "watch",
+  //   component: watch,
+  // },
 
   //   {
   //     path: "/about",
