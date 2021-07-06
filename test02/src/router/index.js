@@ -17,6 +17,7 @@ import dataBindingClass from "../views/dataBindingClass.vue";
 import dataBindingStyle from "../views/dataBindingStyle.vue";
 import dataBindingList from "../views/dataBindingList.vue";
 import dataBindingList2 from "../views/dataBindingList2.vue";
+// import dataBindingList3 from "../views/dataBindingList3.vue";
 import renderingIf from "../views/renderingIf.vue";
 import eventBinding from "../views/eventBinding.vue";
 import vending from "../views/vending.vue";
@@ -30,7 +31,7 @@ import nestedComponent5 from "../views/nestedComponent5.vue";
 // import Parent from "../views/Parent.vue";
 // import Parent2 from "../views/Parent2.vue";
 // import SlotUserModalLayout from "../views/SlotUserModalLayout.vue";
-import ProviedInject from "../views/ProviedInject.vue";
+// import ProviedInject from "../views/ProviedInject.vue";
 // import watch from "../views/watch.vue";
 // import computed from "../views/computed.vue";
 
@@ -193,11 +194,16 @@ const routes = [
   //   name: "SlotUserModalLayout",
   //   component: SlotUserModalLayout,
   // },
-  {
-    path: "/ProviedInject",
-    name: "ProviedInject",
-    component: ProviedInject,
-  },
+  // {
+  //   path: "/ProviedInject",
+  //   name: "ProviedInject",
+  //   component: ProviedInject,
+  // },
+  // {
+  //   path: "/dataBindingList3",
+  //   name: "dataBindingList3",
+  //   component: dataBindingList3,
+  // },
   // // {
   //   path: "/computed",
   //   name: "computed",

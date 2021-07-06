@@ -28,5 +28,42 @@ method
 // mounted에 데이터를 몰아주게되면 데이터가 뿌려지기전에 클릭하면 공란이 나오는 불상사가 있습니다.
 
 
+SPA Single Page Application이기 때문에 발생하는 문제. 단 하나의 페이지.
+			외부 로드시 싱글페이지 전체를 가져오기 때문에 비용이 많이 듦.
+CSR Client Side Rendering
+
+SSR Server Side Rendering > vue는 SSR도 제공하고 있음. SPA 장점이 사라지게됨.
+			이 경우 SNS등 외부 페이지에서 불러올때 용이함.
+
+
+Mixin
+api.js 생성 - main.js와 같은 위치.
+mixin 앞에 보통 구별을 위해 달러를 씁니다. 일종의 약속.
+
+
+
+1. Composition API 
+	// Vue 3.0 => 코드 관리가 용이하지만 배우기가 어려움.
+		
+2. Plugins
+	// Pass.
+
+3. Custom Directive
+	// 새로운 기능. 디렉티브를 추가해서 사용함. Pass.
+
+
+0707 일정.
+
+Vuex
+	//
+
+카카오 로그인
+	//
+
+		
+07.22 목 강의 종료
+	미니 프로젝트 발표*
+
+
 
 
