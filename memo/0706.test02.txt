@@ -162,7 +162,7 @@ Kakao.Auth.login({
 
 
 
-네이버 아이디 로그인
+[네이버 아이디 로그인]
 https://developers.naver.com/main/
 접속.
 
@@ -172,10 +172,15 @@ PC웹.
 서비스 : url:http://localhost:8081
 Callback : http://localhost:8081/naverlogin
 
+
+<PASS!!>
 멤버관리.
 네이버 아이디 등록.
 관리자 ID / 테스터 ID
 // 오후 2:31 2021-07-07 시점에서는 자동으로 등록되기 떄문에 따로 개설자는입력하지 않아두 됌.
+</PASS>
+
+
 
 naverlogin.vue 생성
 
@@ -183,6 +188,29 @@ naverlogin.vue 생성
 index.html에 추가.
 
 
+
+>>vue.config.js에 추가. proxy
+
+module.exports = {
+  lintOnSave: false,
+  devServer: {
+    proxy: {
+      "/oauth2.0": {
+        target: "https://nid.naver.com",
+      },
+    },
+  },
+};
+
+
+https://developers.naver.com/docs/login/api/api.md
+로그인 api명세 6.1.4 접근 토큰 삭제 요청
+네아로 개발가이드
+
+const url=
+/oauth2.0/token?grant_type=delete&client_id=BIon5nxWJ_UTCtO0i0kT&client_secret=527300A0_COq1_XV33cf&access_token=c8ceMEJisO4Se7uGCEYKK1p52L93bHXLnaoETis9YzjfnorlQwEisqemfpKHUq2gY&service_provider=NAVER
+클라이언트 아이디 변경
+client_secret 변경.
 
 
 

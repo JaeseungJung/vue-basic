@@ -11,8 +11,8 @@ export default {
   components: {},
   data() {
     return {
-      firstName: "Seungown",
-      lastName: "Go",
+      firstName: "Jason",
+      lastName: "Jung",
     };
   },
   computed: {

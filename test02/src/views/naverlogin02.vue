@@ -24,8 +24,8 @@ export default {
   created() {},
   mounted() {
     (this.naverLogin = new window.naver.LoginWithNaverId({
-      clientId: "BIon5nxWJ_UTCtO0i0kT", // 개발자센터에 등록된 ClientID
-      callbackUrl: "http://localhost:8081/naverlogin", // 개발자센터에 등록한 callback url
+      clientId: "BP26y1gTH7en9eLtuATo", // 개발자센터에 등록된 ClientID
+      callbackUrl: "http://localhost:8081/naverlogin02", // 개발자센터에 등록한 callback url
       isPopup: false,
       loginButton: { color: "green", type: 3, height: 90 }, // color는 white or green
     })),
@@ -46,7 +46,7 @@ export default {
     logout() {
       const accessToken = this.naverLogin.accessToken.accessToken;
       const url =
-        "/oauth2.0/token?grant_type=delete&client_id=BIon5nxWJ_UTCtO0i0kT&client_secret=Towo_YvPJG&access_token=" +
+        "/oauth2.0/token?grant_type=delete&client_id=BP26y1gTH7en9eLtuATo&client_secret=Z8pRhBCtvt&access_token=" +
         accessToken +
         "&service_provider=NAVER";
 
