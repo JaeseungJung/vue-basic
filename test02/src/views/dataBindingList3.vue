@@ -1,5 +1,4 @@
 <template>
-  <!-- axios 설치 -->
   <div>
     <select v-model="selectedGender">
       <option value="">전체</option>
@@ -31,11 +30,12 @@
   </div>
 </template>
 <script>
-import ApiMixin from "../api.js";
+// import ApiMixin from "../api.js";
+
 export default {
   name: "",
   components: {},
-  mixins: [ApiMixin],
+  // mixins: [ApiMixin],
   data() {
     return {
       url: "https://b1e5b8ea-4ddb-49b8-9239-f62e6fea9a35.mock.pstmn.io/getUserList",
@@ -47,12 +47,13 @@ export default {
   setup() {},
   created() {},
   mounted() {
+    console.log("컴포넌트 mounted");
     // this.getUserList();
   },
   unmounted() {},
   methods: {
     async getUserList() {
-      var users = (await axios.get(await this.callAPI(this.url, "get", {}).data;
+      var users = (await this.$callAPI(this.url, "get", {})).data;
 
       if (this.selectedGender == "") {
         //성별 전체 선택

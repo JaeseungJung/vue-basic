@@ -5,6 +5,7 @@
 </template>
 <script>
 import DataGrid2 from "../components/dataGrid2.vue";
+
 export default {
   name: "",
   components: { DataGrid2 },
@@ -14,7 +15,6 @@ export default {
         { title: "이름", key: "name" },
         { title: "연락처", key: "tel" },
         { title: "이메일", key: "email" },
-        { title: "주소", key: "addr" },
       ],
       body: [
         {
@@ -34,12 +34,6 @@ export default {
           tel: "010-0000-0000",
           email: "ji@gmail.com",
           addr: "서울시",
-        },
-        {
-          name: "김우주",
-          tel: "010-5959-0000",
-          email: "galaxy@gmail.com",
-          addr: "갤럭시",
         },
       ],
     };

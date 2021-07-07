@@ -1,36 +1,29 @@
 <template>
-    <div> 
-        <h1> Hello, {{firstName} {{lastName}}} </h1>
-        <h1> {{fullName}} </h1>
-        <input type="text" v-model="firstname">
-
-    
-    
-     </div>
+  <div>
+    <h1>Hello, {{ fullName }}</h1>
+    <input type="text" v-model="firstName" />
+    <input type="text" v-model="lastName" />
+  </div>
 </template>
 <script>
 export default {
-    name: "",
-    components: {},
-   
-    data() {
-        return {
-            firstName: "Jason",
-            lastName: "Jung",
-        };
+  name: "",
+  components: {},
+  data() {
+    return {
+      firstName: "Seungown",
+      lastName: "Go",
+    };
+  },
+  computed: {
+    fullName() {
+      return this.firstName + " " + this.lastName;
     },
-    
-     computed:{
-        fullName () {
-            return this.firstName + "" + this.lastName;
-
-        },
-    },
-},
-    setup() {},
-    created() {},
-    mounted() {},
-    unmounted() {},
-    methods: {}
-}
+  },
+  setup() {},
+  created() {},
+  mounted() {},
+  unmounted() {},
+  methods: {},
+};
 </script>

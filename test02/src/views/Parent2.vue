@@ -1,11 +1,10 @@
 <template>
   <div>
-    <Child ref="child_component" />
+    <Child2 @send-message="sendMessage" />
   </div>
 </template>
 <script>
 import Child2 from "../components/Child2.vue";
-
 export default {
   name: "",
   components: { Child2 },
@@ -16,10 +15,12 @@ export default {
   },
   setup() {},
   created() {},
-  mounted() {
-    sendMessage(data);
-  },
+  mounted() {},
   unmounted() {},
-  methods: {},
+  methods: {
+    sendMessage(data) {
+      console.log(data);
+    },
+  },
 };
 </script>
