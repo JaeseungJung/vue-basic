@@ -184,12 +184,13 @@ Callback : http://localhost:8081/naverlogin
 
 naverlogin.vue 생성
 
+
 <script src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.0.js" charset="utf-8"></script>
 index.html에 추가.
 
 
 
->>vue.config.js에 추가. proxy
+>>vue.config.js에 proxy 추가. 
 
 module.exports = {
   lintOnSave: false,
@@ -206,6 +207,7 @@ module.exports = {
 https://developers.naver.com/docs/login/api/api.md
 로그인 api명세 6.1.4 접근 토큰 삭제 요청
 네아로 개발가이드
+
 
 const url=
 /oauth2.0/token?grant_type=delete&client_id=BIon5nxWJ_UTCtO0i0kT&client_secret=527300A0_COq1_XV33cf&access_token=c8ceMEJisO4Se7uGCEYKK1p52L93bHXLnaoETis9YzjfnorlQwEisqemfpKHUq2gY&service_provider=NAVER

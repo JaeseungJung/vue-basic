@@ -1,14 +1,16 @@
 <template>
-  <div></div>
+  <div>
+    <ProvideChildInject />
+  </div>
 </template>
 <script>
-import ProvideChildInject from "../components/ProvideChildInject.vue";
+import ProvideChildInject from "../components/ProvideChildInject";
 export default {
   name: "",
   components: { ProvideChildInject },
   data() {
     return {
-      items: [A, B],
+      items: ["A", "B", "C"],
     };
   },
   provide() {

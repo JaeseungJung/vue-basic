@@ -2,6 +2,7 @@
   <div>
     <PageTitle :title="title" :title2="title2" />
   </div>
+  <b-button>Button</b-button>
 </template>
 <script>
 import PageTitle from "../components/pageTitle.vue";

@@ -53,7 +53,7 @@ export default {
       axios.get(url).then((res) => {
         console.log(res);
         this.$store.commit("user", {});
-        this.$router.push({ path: "/naverlogin" });
+        this.$router.push({ path: "/naverlogin02" });
       });
     },
   },

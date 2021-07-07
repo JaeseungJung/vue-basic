@@ -1,8 +1,7 @@
 <template>
   <div>
     <p>{{ count }}</p>
-    <!-- <p>{{ cart.toString() }}</p> -->
-    <button @click="addCart">장바구니 추가</button>
+    <button @click="addCart">장바구니추가</button>
   </div>
 </template>
 <script>
@@ -31,7 +30,6 @@ export default {
   unmounted() {},
   methods: {
     addCart() {
-      //commit 함수접근 하려면 사용해야한다
       this.$store.commit("addCart", {
         productId: "1",
         productName: "마우스",
