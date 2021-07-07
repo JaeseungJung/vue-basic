@@ -34,6 +34,10 @@ import ProviedInject from "../views/ProviedInject.vue";
 import watch from "../views/watch.vue";
 import computed from "../views/computed.vue";
 import StoreAcess from "../views/StoreAcess.vue";
+import LoginAcess from "../views/LoginAcess.vue";
+import kakaologin from "../views/kakaologin.vue";
+import kakaologin02 from "../views/kakaologin02.vue";
+import naverlogin from "../views/naverlogin.vue";
 
 const routes = [
   {
@@ -220,6 +224,26 @@ const routes = [
     path: "/StoreAcess",
     name: "StoreAcess",
     component: StoreAcess,
+  },
+  {
+    path: "/LoginAcess",
+    name: "LoginAcess",
+    component: LoginAcess,
+  },
+  {
+    path: "/kakaologin",
+    name: "kakaologin",
+    component: kakaologin,
+  },
+  {
+    path: "/kakaologin02",
+    name: "kakaologin02",
+    component: kakaologin02,
+  },
+  {
+    path: "/naverlogin",
+    name: "naverlogin",
+    component: naverlogin,
   },
 
   //   {

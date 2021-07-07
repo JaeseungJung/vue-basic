@@ -17,6 +17,19 @@ export default {
   created() {},
   mounted() {},
   unmounted() {},
-  methods: {},
+
+  methods: {
+    login() {
+      this.$store.commit("user", {
+        id: "JasonJung",
+        email: "jason@gmail.com",
+        name: "JasonJung",
+      });
+    },
+
+    logout() {
+      this.$store.commit("user", {});
+    },
+  },
 };
 </script>

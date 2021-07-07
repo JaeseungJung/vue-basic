@@ -73,8 +73,8 @@ Vuex
 -에스크로 서비스 // 안전거래
 
 
+오후 1:45 2021-07-07 <목>
 
-0707 목
 
 Vuex
 
@@ -86,6 +86,102 @@ npm  install vuex@next
 
 npm install vuex-persistedstate
 안돼면 --save
+
+
+GDPR 개인정보보호
+일정 기간 지나면 개인 정보를 모두 삭제해야함.
+벌금 최소 260억원. 유로. 유럽에서.
+
+
+[카카오 계정 로그인]
+
+https://developers.kakao.com/
+카카오 개발자 센터 접속.
+
+1. 카카오 개발자 센터 내 서비스 등록.
+2. 카카오 라이브러리 - 내 애플리케이션
+
+앱키 => 모바일
+55d328144744734c12be6d6f89b7777d
+8d23aa9d01e67a499183ec489d2ba43d
+자바 스크립트 키.
+
+http://localhost:8081 
+url 등록
++리다이렉트 - 상태:활성화. => 로그인 정보를 받을 곳
+http://localhost:8081/kakaologin
+
+
+v 동의항목
+이메일 정보는 검수가 필요함.
+
+
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+
+public/
+index.html에 추가
+스크립트 아래.
+
+
+window.Kakao.init("55d328144744734c12be6d6f89b7777d");
+window.Kakao.isInitialized();
+main.js 아래에 추가.
+
+views
+kakaologin.vue
+생성.
+
+
+<a id="custom-login-btn" @click="kakaoLogin()">
+      <img
+        src="//k.kakaocdn.net/14/dn/btqCn0WEmI3/nijroPfbpCa4at5EIsjyf0/o.jpg"
+        width="222"
+      />
+    </a>
+
+=> kakakologin에 삽입. 로그인 이미지 버튼임.
+
+
+
+기타 카톡 로그인 이미지
+https://developers.kakao.com/docs/latest/ko/reference/design-guide#login-button
+
+
+
+Kakao.Auth.login({
+  success: function(response) {
+    console.log(response);
+  },
+  fail: function(error) {
+    console.log(error);
+  },
+});
+=> kakakologin 함수에 삽입.
++ scope
+
+
+
+
+네이버 아이디 로그인
+https://developers.naver.com/main/
+접속.
+
+네아로 > 이메일, 별명
+PC웹.
+
+서비스 : url:http://localhost:8081
+Callback : http://localhost:8081/naverlogin
+
+멤버관리.
+네이버 아이디 등록.
+관리자 ID / 테스터 ID
+// 오후 2:31 2021-07-07 시점에서는 자동으로 등록되기 떄문에 따로 개설자는입력하지 않아두 됌.
+
+naverlogin.vue 생성
+
+<script src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.0.js" charset="utf-8"></script>
+index.html에 추가.
+
 
 
 
