@@ -74,6 +74,20 @@ Vuex
 
 
 
+0707 목
+
+Vuex
+
+//설치
+npm  install vuex@next
+
+설치 안되면 --save 추가 재시도.
+
+
+npm install vuex-persistedstate
+안돼면 --save
+
+
 
 
 

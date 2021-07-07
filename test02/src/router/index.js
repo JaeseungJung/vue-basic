@@ -33,6 +33,7 @@ import SlotUserModalLayout from "../views/SlotUserModalLayout.vue";
 import ProviedInject from "../views/ProviedInject.vue";
 import watch from "../views/watch.vue";
 import computed from "../views/computed.vue";
+import StoreAcess from "../views/StoreAcess.vue";
 
 const routes = [
   {
@@ -214,6 +215,11 @@ const routes = [
     path: "/watch",
     name: "watch",
     component: watch,
+  },
+  {
+    path: "/StoreAcess",
+    name: "StoreAcess",
+    component: StoreAcess,
   },
 
   //   {
