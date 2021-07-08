@@ -6,10 +6,12 @@ https://vuejs.org/v2/guide/instance.html
 라이프 사이클 다이어그램
 
 ~eventHook~
+C - 	M - 	U - 	U
+reated    ounted   pdated    nmount
 
 sertup
 
-beforCreate
+beforeCreate
 created
 >
 beforeMount
