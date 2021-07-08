@@ -252,6 +252,98 @@ package.js내 수정
 
 
 
+넷플릭스 분석
+데이터베이스
+
+레코드마다 고유 키가 있음.
+데이터는 고유 키 아이디로 연결됨.
+필터와 유사하게 기능함.
+
+R DBMS
+
+SQL
+
+
+https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all
+
+모든 데이터 추출
+SELECT * FROM Customers;
+
+이름만 추출        
+SELECT CustomerName, Address FROM [Customers]
+
+나라가 멕시코인 사람만 추출
+SELECT * FROM [Customers] WHERE Country = "Mexico"
+
+국가만 추출
+SELECT Country FROM [Customers]
+
+중복된 국가 밸류 제외.
+SELECT distinct Country FROM [Customers]
+
+and
+SELECT * FROM Customers Where Country = "Mexico" and PostalCode = "05021"
+
+or
+SELECT * FROM Customers Where Country = "Mexico" or PostalCode = "05021"
+
+정렬
+SELECT * FROM Customers Where Country = "Mexico" or PostalCode = "05021"
+order by CustomerName
+
+역정렬
+SELECT * FROM Customers Where Country = "Mexico" or PostalCode = "05021"
+order by CustomerName
+
+
+정보 추가
+insert into [ Customers ] (CustomersID, CustomerName, ContactName, Address, City, PostalCode, Country)
+values ("Jason Jung", Jason, 222 , 333, 444, 4444, korea)
+
+정보변경.
+update [Customers] 
+set CustomerName= "rara"
+where CustomerID = 1
+
+삭제
+delete from [Customers] where CustomerID = 1
+
+비슷한 값 조회
+SELECT * FROM Customers where CustomerName like "%An%"
+
+
+
+SELECT T1.*, T2.SupplierName FROM [Products] T1, [Suppliers] T2
+where T1.SupplierID = T2.SupplierID
+
+
+AWS 아마존 서버
+/ AZURE 마이크로소프트 
+
+
+쿠버네티스
+:절대 죽지 않는 서버
+
+        
+
+
+
+
+        
+        
+
+        
+
+        
+
+
+
+        
+
+
+
+
+
 
 
 

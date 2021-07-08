@@ -39,6 +39,7 @@ import kakaologin from "../views/kakaologin.vue";
 import kakaologin02 from "../views/kakaologin02.vue";
 import naverlogin from "../views/naverlogin.vue";
 import naverlogin02 from "../views/naverlogin02.vue";
+import googleLogin from "../views/GoogleLogin.vue";
 
 const routes = [
   {
@@ -245,6 +246,16 @@ const routes = [
     path: "/naverlogin",
     name: "naverlogin",
     component: naverlogin,
+  },
+  {
+    path: "/naverlogin02",
+    name: "naverlogin02",
+    component: naverlogin02,
+  },
+  {
+    path: "/googleLogin",
+    name: "googleLogin",
+    component: googleLogin,
   },
   {
     path: "/naverlogin02",
