@@ -217,5 +217,39 @@ client_secret 변경.
 
 
 
+오전 9:16 2021-07-08
+vue create 에러 없이 생성.
+
+Vue CLI v4.5.13
+? Please pick a preset: Manually select features
+? Check the features needed for your project: Choose Vue version, Babel, Router, Vuex, Linter
+? Choose a version of Vue.js that you want to start the project with 3.x
+? Use history mode for router? (Requires proper server setup for index fallback in production) Yes
+? Pick a linter / formatter config: Standard
+? Pick additional lint features: Lint on save
+? Where do you prefer placing config for Babel, ESLint, etc.? In package.json
+? Save this as a preset for future projects? No
+
+<에러> : 쌍따옴표, 홑따옴표 프리티어에서 발생하는 문제임. 싱글쿼트 더블쿼트.
+.prettierrc 파일 생성
+내용:
+{
+  "semi": false,
+  "bracketSpacing": true,
+  "singleQuote": true,
+  "useTabs": false,
+  "trailingComma": "none",
+  "printWidth": 80
+}
+
+package.js내 수정
+"rules": {
+      "space-before-function-paren": "off"
+    }
+
+
+
+
+
 
 
