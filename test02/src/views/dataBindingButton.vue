@@ -3,7 +3,7 @@
 <input type="text" v-model="txt1">;
 <!-- <button v-bind:disabled="txt1==''">조회</button> -->
 <!-- 위와 동일 -->
-<button :disabled="txt1==''">조회</button>
+<button :disabled="txt1==''">조회 입력</button>
 
 
 
