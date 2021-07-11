@@ -27,7 +27,7 @@ export default {
       clientId: "BIon5nxWJ_UTCtO0i0kT", // 개발자센터에 등록된 ClientID
       callbackUrl: "http://localhost:8080/naverlogin", // 개발자센터에 등록한 callback url
       isPopup: false,
-      loginButton: { color: "green", type: 3, height: 90 }, // color는 white or green
+      loginButton: { color: "green", type: 3, height: 90 }, // color는 white or green 선택.
     })),
       this.naverLogin.init();
 
