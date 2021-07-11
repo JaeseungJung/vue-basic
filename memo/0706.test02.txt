@@ -104,8 +104,8 @@ https://developers.kakao.com/
 2. 카카오 라이브러리 - 내 애플리케이션
 
 앱키 => 모바일
-55d328144744734c12be6d6f89b7777d
-8d23aa9d01e67a499183ec489d2ba43d
+55d32hjhjhjh12bhk535343
+gc489d2ba43dfg4543535
 자바 스크립트 키.
 
 http://localhost:8081 
