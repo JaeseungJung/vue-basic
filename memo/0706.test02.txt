@@ -428,6 +428,17 @@ http://localhost:3000/api/getUserList
 
 npm install mysql
 
+PROTOCOL_PACKETS_OUT_OF_ORDER 에러
+호스트를 "localhost"로 변경.
+
+뷰프로젝트
+api.js
+
+import axios from "axios";
+axios.defaults.baseURL = 'http://localhost:3000'
+axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8'
+axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*'
+
 
 
 

@@ -5,6 +5,7 @@ import ApiMixin from "./api";
 import store from "./store/store";
 import Vue from "vue";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
+import api from "./api.js";
 
 //Make BootstrapVue available throughout your project
 // Vue.use(BootstrapVue);
@@ -15,13 +16,7 @@ import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 
-
-
-createApp(App).use(router).use(store).mixin(ApiMixin).mount("#app");
+createApp(App).use(router).use(store).mixin(ApiMixin).mixin(api).mount("#app");
 
 window.Kakao.init("8d23aa9d01e67a499183ec489d2ba43d");
 window.Kakao.isInitialized();
-
-
-
-

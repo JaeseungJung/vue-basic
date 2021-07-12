@@ -40,6 +40,8 @@ import kakaologin02 from "../views/kakaologin02.vue";
 import naverlogin from "../views/naverlogin.vue";
 import naverlogin02 from "../views/naverlogin02.vue";
 import googleLogin from "../views/GoogleLogin.vue";
+import getList from "../views/getList.vue";
+import person from "../views/person.vue";
 
 const routes = [
   {
@@ -261,6 +263,16 @@ const routes = [
     path: "/naverlogin02",
     name: "naverlogin02",
     component: naverlogin02,
+  },
+  {
+    path: "/getList",
+    name: "getList",
+    component: getList,
+  },
+  {
+    path: "/person",
+    name: "person",
+    component: person,
   },
 
   //   {
