@@ -324,6 +324,123 @@ AWS 아마존 서버
 쿠버네티스
 :절대 죽지 않는 서버
 
+
+
+오전 9:06 2021-07-12 월 
+첫 zoom 수업
+
+마리아 DB
+maira db 구글 검색 - 사이트 진입 .org
+download - mariadb-10.6.3-winx64.msi
+
+비밀번호 설정 - UTP8 체크
+
+램용량 - 버퍼 풀 사이즈 - 사용램의 반정도로. - 설치완료.
+
+cmd 실행
+
+C:\Users\정재승>cd \
+
+C:\>cd "Program Files"
+
+C:\Program Files>cd "MariaDB 10.6"
+
+C:\Program Files\MariaDB 10.6>cd bin
+
+C:\Program Files\MariaDB 10.6\bin>mysql.exe -u root -p
+Enter password: ********
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+
+C:\Program Files\MariaDB 10.6\bin>mysql.exe -u root -p
+Enter password: *******
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 4
+Server version: 10.6.3-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+
+데이터 베이스 표 만들기
+
+show databases;
+create database dev;
+
+use dev;
+
+
+MariaDB [(none)]> use dev;
+Database changed
+MariaDB [dev]> create table mammals (
+    -> id char primary key,
+    -> name char(20) not null,
+    -> height int,
+    -> weight int
+    -> );
+Query OK, 0 rows affected (0.022 sec)
+
+
+
+
+
+dbeaver 설치
+윈도우 64 비트
+다음다음다음 설치완료
+
+실행
+새로만들기
+데이터베이스연결
+마리아 디비
+비밀번호 입력
+
+더블클릭후 - 에러 확인 - 다운로드 실행
+
+
+
+
+
+Node js 
+- 강사님 방법 포스트맨을 활용.
+
+node-basie 폴더 생성
+
+npm init
+npm install express
+
+app.js 생성
+const express = require("express");
+const app = express();
+
+npm install cors
+
+
+postman 실행
++
+url:
+http://localhost:3000/api/getUserList
+
+안돼면 
+"dev": "node app" 
+로 변경.
+
+
+
+npm install mysql
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
 
 
