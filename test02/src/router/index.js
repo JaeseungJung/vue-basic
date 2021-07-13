@@ -42,6 +42,7 @@ import naverlogin02 from "../views/naverlogin02.vue";
 import googleLogin from "../views/GoogleLogin.vue";
 import getList from "../views/getList.vue";
 import person from "../views/person.vue";
+import imageUpload from "../views/imageUpload.vue";
 
 const routes = [
   {
@@ -273,6 +274,11 @@ const routes = [
     path: "/person",
     name: "person",
     component: person,
+  },
+  {
+    path: "/imageUpload",
+    name: "imageUpload",
+    component: imageUpload,
   },
 
   //   {

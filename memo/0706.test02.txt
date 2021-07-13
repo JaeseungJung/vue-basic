@@ -440,6 +440,15 @@ axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8'
 axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*'
 
 
+오후 1:05 2021-07-13
+npm install dotenv
+설치 for 보안
+
+npm install multer
+설치
+
+
+
 
 
 

@@ -1,6 +1,22 @@
 const express = require("express");
 const app = express();
 const fs = require("fs");
+const dotenv = require("dotenv");
+const path = require("path");
+
+dotenv.config({ path: path.join(__dirname, ".env.local") });
+
+var multer = require("multer");
+var storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, "uploads/"); // cb 콜백함수를 통해 전송된 파일 저장 디렉토리 설정
+  },
+  filename: function (req, file, cb) {
+    // cb(null, file.originalname) // cb 콜백함수를 통해 전송된 파일 이름 설정
+    cb(null, new Date().valueOf() + path.extname(file.originalname));
+  },
+});
+var upload = multer({ storage: storage });
 
 //cors
 const cors = require("cors");
@@ -19,14 +35,40 @@ app.use(
 );
 
 const server = app.listen(3000, () => {
+  var dir = __dirname + "/uploads";
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir);
+
   console.log("Server stared. port 3000.");
 });
 
+app.use("/static", express.static(__dirname + "/uploads"));
+
 const dbPool = require("mysql").createPool({
-  database: "dev", // dev
-  host: "localhost", // ip주소
-  user: "root",
-  password: "mariadb", // 비밀번호
+  database: process.env.database, // dev
+  host: process.env.host, // ip주소
+  user: process.env.user,
+  password: process.env.password, // 비밀번호
+});
+
+app.post("/api/uploadFile", upload.single("attachment"), async (req, res) => {
+  console.log(req.file);
+  return res.status(200).json(req.file);
+});
+
+app.delete("/api/deleteFile", async (req, res) => {
+  const filePath = path.join(__dirname, "uploads", req.query.filename);
+  console.log(path);
+  fs.unlink(filePath, (err) => {
+    if (err) {
+      console.error(err);
+      res.status(400).json({
+        type: "E",
+        msg: "파일을 삭제할 수 없습니다. 다시 시도하세요.",
+      });
+    }
+
+    res.status(200).json({ type: "S", msg: "성공적으로 삭제되었습니다." });
+  });
 });
 
 app.get("/api/getUserList", async (req, res) => {
