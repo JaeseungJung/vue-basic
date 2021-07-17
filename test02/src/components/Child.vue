@@ -2,6 +2,7 @@
   <div>
     <button @click="myFunction" ref="btn">클릭</button>
     <!-- 뷰에서 쓰는 유일한 값. 아이디와 유사 ref -->
+    <!-- 레퍼 런스  -->
   </div>
 </template>
 <script>
