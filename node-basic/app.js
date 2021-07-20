@@ -87,18 +87,6 @@ app.get("/api/getList", async (req, res) => {
   }
 });
 
-//////
-
-app.get("/api/getList2", async (req, res) => {
-  try {
-    res.send(await sys.db("list2"));
-  } catch (err) {
-    res.status(500).send({
-      error: err,
-    });
-  }
-});
-
 const sql = require("./sql.js");
 
 fs.watchFile(__dirname + "/sql.js", (curr, prev) => {
