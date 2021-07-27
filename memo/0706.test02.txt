@@ -125,7 +125,7 @@ index.html에 추가
 스크립트 아래.
 
 
-window.Kakao.init("55d328144744734c12be6d6f89b7777d");
+window.Kakao.init("55d328144744734c12787866655");
 window.Kakao.isInitialized();
 main.js 아래에 추가.
 
