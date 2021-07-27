@@ -46,7 +46,7 @@ app.use("/static", express.static(__dirname + "/uploads"));
 const dbPool = require("mysql").createPool({
   database: process.env.database, // dev
   host: process.env.host, // ip주소
-  //port: process.env.port,
+  // port: process.env.port,
   user: process.env.user,
   password: process.env.password, // 비밀번호
 });
